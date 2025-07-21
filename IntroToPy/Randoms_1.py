@@ -2,8 +2,13 @@ import random
 
 # Read input parameters from the console
 count = 100 # int(input("Number of values?> "))
+<<<<<<< HEAD
 min_value = 62 # int(input("Minimum value?> "))
 max_value = 512 # int(input("Maximum value?> "))
+=======
+min_value = 10 # int(input("Minimum value?> "))
+max_value = 250 # int(input("Maximum value?> "))
+>>>>>>> ch1
 print(f"Generating {count} randoms in the range [{min_value}, {max_value}]")
 
 # Generate count values in the range [min_value, max_value] and store them in a the values map
@@ -18,7 +23,11 @@ for i in range(0, count):
     randoms_map[r].append(i)
 
 # Write a text file "randoms_db.txt" with each random on a line, its value followed by the indexes where it occurred
+<<<<<<< HEAD
 with open("IntroToPy/pizza", "w") as data_file:
+=======
+with open("IntroToPy/shaworma.txt", "w") as data_file:
+>>>>>>> ch1
     for r in randoms_map.keys():
         data_file.write(f"{r} {randoms_map[r]}\n")
 
